@@ -111,5 +111,69 @@
 
 </body>
 </html>
-    
+   <div id="menu-btn" onclick="toggleMenu()">☰</div>
+
+<div id="red-menu">
+    <h3>MENU</h3>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Logout</a></li>
+    </ul>
+</div>
+
+<style>
+/* Floating button */
+#menu-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: red;
+    color: white;
+    padding: 10px 15px;
+    font-size: 22px;
+    border-radius: 12px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+/* Red Menu Box */
+#red-menu {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    padding: 15px;
+    background: red;
+    color: white;
+    border-radius: 12px;
+    display: none;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+    z-index: 9999;
+}
+
+#red-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#red-menu li {
+    margin: 10px 0;
+}
+
+#red-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+</style>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("red-menu");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
+</script> 
 
