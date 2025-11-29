@@ -176,4 +176,129 @@ function toggleMenu() {
     menu.style.display = (menu.style.display === "block") ? "none" : "block";
 }
 </script> 
+<!-- MENU BUTTON -->
+<div id="menu-btn" onclick="toggleMenu()">☰</div>
+
+<!-- SLIDING RED MENU -->
+<div id="red-menu">
+    <div class="menu-header">
+        ⚡ GOD MENU
+    </div>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Settings</a></li>
+    </ul>
+
+    <h4>Enter Your Code:</h4>
+    <textarea id="custom-code" placeholder="Type your code here..."></textarea>
+
+    <button onclick="runCode()">Run Code</button>
+</div>
+
+<style>
+/* Menu Toggle Button */
+#menu-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: red;
+    color: white;
+    padding: 10px 15px;
+    font-size: 22px;
+    border-radius: 12px;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+/* Sliding Menu */
+#red-menu {
+    position: fixed;
+    top: 0;
+    right: -260px; /* Hidden initially */
+    width: 260px;
+    height: 100%;
+    background: red;
+    color: white;
+    padding: 20px;
+    box-shadow: -2px 0px 10px rgba(0,0,0,0.5);
+    transition: 0.4s;
+    z-index: 99998;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Thunder Logo Header */
+.menu-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Menu Items */
+#red-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+#red-menu li {
+    margin: 15px 0;
+}
+
+#red-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Text Box for Custom Code */
+#custom-code {
+    width: 100%;
+    height: 120px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Run Button */
+button {
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+</style>
+
+<script>
+let isOpen = false;
+
+function toggleMenu() {
+    const menu = document.getElementById("red-menu");
+    if (!isOpen) {
+        menu.style.right = "0";
+        isOpen = true;
+    } else {
+        menu.style.right = "-260px";
+        isOpen = false;
+    }
+}
+
+// Just shows alert for testing
+function runCode() {
+    let customCode = document.getElementById("custom-code").value;
+    alert(**AIMBOT** <@&1441410500570382366> 
+
+FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 00 00 00 00 00 00 00 00 00 00 00 00 A5 43 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ?? ?? ??\n" + customCode);
+}
+    </script>
 
